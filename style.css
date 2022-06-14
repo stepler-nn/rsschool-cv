@@ -1,7 +1,6 @@
-/* позиционирование */
 * {
     box-sizing: border-box;
-    border: 1px solid red;}
+    border: 1px solid white;}
 body {
     justify-content: space-between;
     align-items: center;
@@ -11,11 +10,27 @@ body {
     align-items: left;
     position: fixed;
     list-style: none;
-    width: 10px;
+    width: 15px;
     padding-inline-start: 10px;
     
   }
-  .main-container {
+.head {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}  
+
+h1.head{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+
+h2.head{
+  font-size: 15px;
+  font-style: oblique;
+}
+.main-container {
     display: flex;
     flex-wrap: wrap;
     
@@ -24,8 +39,6 @@ body {
   .section {
     width: 100%;
   }
-/* блочная модель (размеры, отступы) */
-
 
 .container {
         max-width: 500px;
@@ -39,21 +52,16 @@ body {
   }
 
 
-/* типографика (свойства шрифта) */
 body {font-family: 'Quicksand', sans-serif;}
-/* оформление (цвет фона, тень) */
-/* анимация */
+
 @media (max-width: 750px) {
     
         .nav-list {
-            align-items: left;
+            align-items: center;
             position: static;
             display: flex;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             flex-direction: row;
             
-         }
-         .avatar{
-             ;
          }
 }
