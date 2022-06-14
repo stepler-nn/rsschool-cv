@@ -1,0 +1,59 @@
+/* позиционирование */
+* {
+    box-sizing: border-box;
+    border: 1px solid red;}
+body {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+  }
+  .nav-list {
+    align-items: left;
+    position: fixed;
+    list-style: none;
+    width: 10px;
+    padding-inline-start: 10px;
+    
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .section {
+    width: 100%;
+  }
+/* блочная модель (размеры, отступы) */
+
+
+.container {
+        max-width: 500px;
+        margin: 0 auto;
+}
+
+
+.nav-link {
+    padding: 0 0px;
+     /* line-height: 30px;  */
+  }
+
+
+/* типографика (свойства шрифта) */
+body {font-family: 'Quicksand', sans-serif;}
+/* оформление (цвет фона, тень) */
+/* анимация */
+@media (max-width: 750px) {
+    
+        .nav-list {
+            align-items: left;
+            position: static;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+         }
+         .avatar{
+             ;
+         }
+}
